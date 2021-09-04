@@ -1,5 +1,4 @@
 const router = require("express").Router();
-const { eq } = require("sequelize/types/lib/operators");
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 

@@ -1,0 +1,23 @@
+[
+    {
+      "comment_body": "I strongly agree, MVC really helps devs keep their files organized",
+      "user_id": 1,
+      "post_id": 1
+    },
+    {
+      "comment_body": "MVC is great! I'm a huge fan of it and use it whenever I can",
+      "user_id": 2,
+      "post_id": 1
+    },
+    {
+      "comment_body": "Thank you for pointing out the differences between authorization and authentication!",
+      "user_id": 3,
+      "post_id": 2
+    },
+    {
+      "comment_body": "I really enjoyed learning about ORMs as well",
+      "user_id": 1,
+      "post_id": 3
+    }
+  ]
+  

@@ -1,0 +1,49 @@
+<div class="text-center display-flex flex-column justify-center">
+  <h4>Would you like to update or delete this post?</h4>
+</div>
+
+<div class="row mt-3 border">
+  <div class="col-md-12">
+    <form class="form">
+      <div class="form-group">
+        <label for="post_title">Title of your post:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="post_title"
+          name="post_title"
+          value="{{posts.post_title}}"
+        />
+      </div>
+      <div class="form-group">
+        <label for="post_body">Body of your post:</label>
+        <textarea
+          class="form-input"
+          id="post_body"
+          name="post_body"
+        >{{posts.post_body}}</textarea>
+      </div>
+      <div class="form-group text-center">
+        <button
+          type="submit"
+          id="updatebtn"
+          class="btn btn-primary"
+          data-id="{{posts.id}}"
+        >Update</button>
+        <button
+          type="submit"
+          id="deletebtn"
+          class="btn btn-primary"
+          data-id="{{posts.id}}"
+        >Delete</button>
+        <button
+          type="submit"
+          id="cancelbtn"
+          class="btn btn-primary"
+          data-id="{{posts.id}}"
+        >Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="/js/updatePost.js"></script>

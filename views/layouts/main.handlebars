@@ -1,0 +1,49 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Post</title>
+    <link rel="stylesheet" href="/css/jass.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="flex-column justify-space-around">
+      <header class="display-flex align-center p-2">
+        <h3 style="margin-right: 1.35REM;">
+          <a href="/">Home</a>
+        </h3>
+        <h3 style="margin-right: 1.35REM;">
+          <a href="/profile">Dashboard</a>
+        </h3>
+        <nav>
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+            <h3>
+              <a id="logout" href="/">logout</a>
+            </h3>
+          {{else}}
+            <h3>
+              <a href="/login">login</a>
+            </h3>
+          {{/if}}
+        </nav>
+      </header>
+
+      <main class="container container-fluid mt-5">
+        <!-- Render the sub layout -->
+        {{{body}}}
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
+
+</html>
